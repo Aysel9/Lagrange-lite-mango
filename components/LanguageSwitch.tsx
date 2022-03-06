@@ -6,20 +6,8 @@ import dayjs from 'dayjs'
 import useLocalStorageState from '../hooks/useLocalStorageState'
 
 require('dayjs/locale/en')
-require('dayjs/locale/es')
-require('dayjs/locale/zh')
-require('dayjs/locale/zh-tw')
 
-export const LANGS = [
-  { locale: 'en', name: 'english', description: 'english' },
-  { locale: 'es', name: 'spanish', description: 'spanish' },
-  {
-    locale: 'zh_tw',
-    name: 'chinese-traditional',
-    description: 'traditional chinese',
-  },
-  { locale: 'zh', name: 'chinese', description: 'simplified chinese' },
-]
+export const LANGS = [{ locale: 'en', name: 'english', description: 'english' }]
 
 const LanguageSwitch = () => {
   const router = useRouter()

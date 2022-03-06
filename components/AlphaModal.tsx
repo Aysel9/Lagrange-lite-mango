@@ -72,18 +72,6 @@ const AlphaModal = ({
               <CheckCircleIcon className="flex-shrink-0 h-5 mr-2 text-th-green w-5" />
               {t('intro-feature-1')}
             </div>
-            <div className="flex items-center text-th-fgd-1">
-              <CheckCircleIcon className="flex-shrink-0 h-5 mr-2 text-th-green w-5" />
-              {t('intro-feature-2')}
-            </div>
-            <div className="flex items-center text-th-fgd-1">
-              <CheckCircleIcon className="flex-shrink-0 h-5 mr-2 text-th-green w-5" />
-              {t('intro-feature-3')}
-            </div>
-            <div className="flex items-center text-th-fgd-1">
-              <CheckCircleIcon className="flex-shrink-0 h-5 mr-2 text-th-green w-5" />
-              {t('intro-feature-4')}
-            </div>
           </div>
           <div className="px-6 text-th-fgd-3 text-center mt-4">
             {t('v3-unaudited')}

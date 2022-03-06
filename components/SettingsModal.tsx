@@ -15,7 +15,7 @@ const NODE_URLS = [
   { label: 'Triton (RPC Pool)', value: 'https://mango.rpcpool.com' },
   {
     label: 'Genesys Go',
-    value: 'https://mango.genesysgo.net/',
+    value: 'https://ssc-dao.genesysgo.net',
   },
   {
     label: 'Project Serum',
@@ -24,7 +24,7 @@ const NODE_URLS = [
   { label: 'Custom', value: '' },
 ]
 
-const CUSTOM_NODE = NODE_URLS.find((n) => n.label === 'Custom')
+const CUSTOM_NODE = NODE_URLS.find((n) => n.label === 'Genesys Go')
 
 export const NODE_URL_KEY = 'node-url-key-0.5'
 export const DEFAULT_MARKET_KEY = 'defaultMarket-0.3'

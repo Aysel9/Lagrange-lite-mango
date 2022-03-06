@@ -2,12 +2,11 @@ import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import { MoonIcon, SunIcon } from '@heroicons/react/outline'
 import DropMenu from './DropMenu'
-import { MangoIcon } from './icons'
 
 const THEMES = [
   { name: 'Light', icon: <SunIcon className="h-4 w-4" /> },
   { name: 'Dark', icon: <MoonIcon className="h-4 w-4" /> },
-  { name: 'Mango', icon: <MangoIcon className="stroke-current h-4 w-4" /> },
+  /* { name: 'Mango', icon: <MangoIcon className="stroke-current h-4 w-4" /> }, */
 ]
 
 const ThemeSwitch = () => {

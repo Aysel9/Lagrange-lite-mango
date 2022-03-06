@@ -8,8 +8,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      display: ['Lato, sans-serif'],
-      body: ['Lato, sans-serif'],
+      display: ['Roboto, sans-serif'],
+      body: ['Roboto, sans-serif'],
     },
     extend: {
       animation: {

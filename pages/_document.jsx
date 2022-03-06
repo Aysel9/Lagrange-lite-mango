@@ -6,7 +6,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
             rel="stylesheet"
           />
           <script src="/datafeeds/udf/dist/bundle.js" />

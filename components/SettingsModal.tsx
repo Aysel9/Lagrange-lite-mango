@@ -12,19 +12,19 @@ import { useTranslation } from 'next-i18next'
 import Switch from './Switch'
 
 const NODE_URLS = [
-  { label: 'Triton (RPC Pool)', value: 'https://mango.rpcpool.com' },
+  /*   { label: 'Triton (RPC Pool)', value: 'https://mango.rpcpool.com' }, */
   {
     label: 'Genesys Go',
     value: 'https://ssc-dao.genesysgo.net',
   },
-  {
+  /*   {
     label: 'Project Serum',
     value: 'https://solana-api.projectserum.com/',
-  },
-  { label: 'Custom', value: '' },
+  }, */
+  { label: 'Custom', value: 'https://ssc-dao.genesysgo.net' },
 ]
 
-const CUSTOM_NODE = NODE_URLS.find((n) => n.label === 'Genesys Go')
+const CUSTOM_NODE = NODE_URLS.find((n) => n.label === 'Custom')
 
 export const NODE_URL_KEY = 'node-url-key-0.5'
 export const DEFAULT_MARKET_KEY = 'defaultMarket-0.3'

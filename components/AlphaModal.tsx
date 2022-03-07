@@ -50,33 +50,33 @@ const AlphaModal = ({
     <Modal isOpen={isOpen} onClose={onClose} hideClose>
       <Modal.Header>
         <div className="flex flex-col items-center">
-          <div className="flex space-x-8 items-center justify-center">
+          <div className="flex items-center justify-center space-x-8">
             <img
               className={`h-12 w-auto`}
-              src="/assets/icons/logo.svg"
+              src="/Lagrange-logo-light.png"
               alt="next"
             />
           </div>
         </div>
       </Modal.Header>
-      <h1 className="m-auto mb-4 relative w-max">
+      <h1 className="relative m-auto mb-4 w-max">
         {t('v3-welcome')}
         <span className="absolute bg-th-primary font-bold px-1.5 py-0.5 -right-8 rounded-full text-black text-xs -top-1 w-max">
-          V3
+          Pro
         </span>
       </h1>
       {savedLanguage ? (
         <>
-          <div className="bg-th-bkg-3 p-4 space-y-3 rounded-md">
+          <div className="p-4 space-y-3 rounded-md bg-th-bkg-3">
             <div className="flex items-center text-th-fgd-1">
-              <CheckCircleIcon className="flex-shrink-0 h-5 mr-2 text-th-green w-5" />
+              <CheckCircleIcon className="flex-shrink-0 w-5 h-5 mr-2 text-th-green" />
               {t('intro-feature-1')}
             </div>
           </div>
-          <div className="px-6 text-th-fgd-3 text-center mt-4">
+          <div className="px-6 mt-4 text-center text-th-fgd-3">
             {t('v3-unaudited')}
           </div>
-          <div className="border border-th-fgd-4 mt-4 p-3 rounded-md">
+          <div className="p-3 mt-4 border rounded-md border-th-fgd-4">
             <Checkbox
               checked={acceptRisks}
               onChange={(e) => setAcceptRisks(e.target.checked)}

@@ -33,8 +33,8 @@ export const DEFAULT_SPOT_MARGIN_KEY = 'defaultSpotMargin'
 export const initialMarket = {
   base: 'SOL',
   kind: 'perp',
-  name: 'SOL-PERP',
-  path: '/?name=SOL-PERP',
+  name: 'USDT/USDC',
+  path: '/?name=USDT/USDC',
 }
 
 const SettingsModal = ({ isOpen, onClose }) => {
@@ -68,7 +68,7 @@ const SettingsModal = ({ isOpen, onClose }) => {
           className="absolute flex items-center left-2 top-3"
           onClick={() => setSettingsView('')}
         >
-          <ChevronLeftIcon className="h-5 w-5" />
+          <ChevronLeftIcon className="w-5 h-5" />
           <span>{t('back')}</span>
         </LinkButton>
       ) : null}
@@ -78,26 +78,26 @@ const SettingsModal = ({ isOpen, onClose }) => {
       {!settingsView ? (
         <div className="border-b border-th-bkg-4">
           <button
-            className="border-t border-th-bkg-4 default-transition flex font-normal items-center justify-between py-3 text-th-fgd-1 w-full hover:text-th-primary focus:outline-none"
+            className="flex items-center justify-between w-full py-3 font-normal border-t border-th-bkg-4 default-transition text-th-fgd-1 hover:text-th-primary focus:outline-none"
             onClick={() => setSettingsView('Default Market')}
           >
             <span>{t('default-market')}</span>
-            <div className="flex items-center text-th-fgd-3 text-xs">
+            <div className="flex items-center text-xs text-th-fgd-3">
               {defaultMarket.name}
-              <ChevronRightIcon className="h-5 ml-1 w-5 text-th-fgd-1" />
+              <ChevronRightIcon className="w-5 h-5 ml-1 text-th-fgd-1" />
             </div>
           </button>
           <button
-            className="border-t border-th-bkg-4 default-transition flex font-normal items-center justify-between py-3 text-th-fgd-1 w-full hover:text-th-primary focus:outline-none"
+            className="flex items-center justify-between w-full py-3 font-normal border-t border-th-bkg-4 default-transition text-th-fgd-1 hover:text-th-primary focus:outline-none"
             onClick={() => setSettingsView('RPC Endpoint')}
           >
             <span>{t('rpc-endpoint')}</span>
-            <div className="flex items-center text-th-fgd-3 text-xs">
+            <div className="flex items-center text-xs text-th-fgd-3">
               {rpcEndpoint.label}
-              <ChevronRightIcon className="h-5 ml-1 w-5 text-th-fgd-1" />
+              <ChevronRightIcon className="w-5 h-5 ml-1 text-th-fgd-1" />
             </div>
           </button>
-          <div className="border-t border-th-bkg-4 flex items-center justify-between py-3 text-th-fgd-1">
+          <div className="flex items-center justify-between py-3 border-t border-th-bkg-4 text-th-fgd-1">
             <span>{t('orderbook-animation')}</span>
             <Switch
               checked={showOrderbookFlash}
@@ -105,7 +105,7 @@ const SettingsModal = ({ isOpen, onClose }) => {
             />
           </div>
 
-          <div className="border-t border-th-bkg-4 flex items-center justify-between py-3 text-th-fgd-1">
+          <div className="flex items-center justify-between py-3 border-t border-th-bkg-4 text-th-fgd-1">
             <span>{t('default-spot-margin')}</span>
             <Switch
               checked={defaultSpotMargin}
@@ -184,7 +184,7 @@ const DefaultMarketSettings = ({ setSettingsView }) => {
           </Select.Option>
         ))}
       </Select>
-      <Button onClick={() => setSettingsView('')} className="mt-6 w-full">
+      <Button onClick={() => setSettingsView('')} className="w-full mt-6">
         <div className={`flex items-center justify-center`}>{t('save')}</div>
       </Button>
     </div>
@@ -236,7 +236,7 @@ const RpcEndpointSettings = ({ setSettingsView }) => {
       ) : null}
       <Button
         onClick={() => handleSetEndpointUrl(rpcEndpointUrl)}
-        className="mt-6 w-full"
+        className="w-full mt-6"
       >
         <div className={`flex items-center justify-center`}>{t('save')}</div>
       </Button>

@@ -11,7 +11,7 @@ import useLocalStorageState from '../hooks/useLocalStorageState'
 import MarketNavItem from './MarketNavItem'
 
 const initialMenuCategories = [
-  { name: 'Perp', desc: 'perp-desc' },
+  /*   { name: 'Perp', desc: 'perp-desc' }, */
   { name: 'Spot', desc: 'spot-desc' },
 ]
 
@@ -19,7 +19,7 @@ export const FAVORITE_MARKETS_KEY = 'favoriteMarkets'
 
 const TradeNavMenu = () => {
   const [favoriteMarkets] = useLocalStorageState(FAVORITE_MARKETS_KEY, [])
-  const [activeMenuCategory, setActiveMenuCategory] = useState('Perp')
+  const [activeMenuCategory, setActiveMenuCategory] = useState('Spot')
   const [menuCategories, setMenuCategories] = useState(initialMenuCategories)
   const buttonRef = useRef(null)
   const groupConfig = useMangoGroupConfig()
@@ -41,7 +41,7 @@ const TradeNavMenu = () => {
     if (favoriteMarkets.length > 0) {
       setActiveMenuCategory('Favorites')
     } else {
-      setActiveMenuCategory('Perp')
+      setActiveMenuCategory('Spot')
     }
   }
 
@@ -78,7 +78,7 @@ const TradeNavMenu = () => {
         menuCategories.filter((cat) => cat.name !== 'Favorites')
       )
       if (activeMenuCategory === 'Favorites') {
-        setActiveMenuCategory('Perp')
+        setActiveMenuCategory('Spot')
       }
     }
   }, [favoriteMarkets])
@@ -89,7 +89,7 @@ const TradeNavMenu = () => {
         <div
           onMouseEnter={() => onHoverMenu(open, 'onMouseEnter')}
           onMouseLeave={() => onHoverMenu(open, 'onMouseLeave')}
-          className="relative flex flex-col z-50"
+          className="relative z-50 flex flex-col"
         >
           <Popover.Button
             className={`-mr-3 px-3 rounded-none focus:outline-none focus:bg-th-bkg-3 ${
@@ -120,15 +120,15 @@ const TradeNavMenu = () => {
             leaveTo="opacity-0"
           >
             <Popover.Panel className="absolute grid grid-cols-3 grid-rows-1 min-h-[235px] top-14 w-[700px]">
-              <div className="bg-th-bkg-4 col-span-1 rounded-bl-lg">
+              <div className="col-span-1 rounded-bl-lg bg-th-bkg-4">
                 <MenuCategories
                   activeCategory={activeMenuCategory}
                   categories={menuCategories}
                   onChange={handleMenuCategoryChange}
                 />
               </div>
-              <div className="bg-th-bkg-3 col-span-2 p-4 rounded-br-lg">
-                <div className="grid grid-cols-2 grid-flow-row gap-x-6">
+              <div className="col-span-2 p-4 rounded-br-lg bg-th-bkg-3">
+                <div className="grid grid-flow-row grid-cols-2 gap-x-6">
                   {markets.map((mkt) => (
                     <MarketNavItem
                       buttonRef={buttonRef}
@@ -186,7 +186,7 @@ const MenuCategories: FunctionComponent<MenuCategoriesProps> = ({
           `}
           >
             {t(cat.name.toLowerCase().replace(' ', '-'))}
-            <div className="font-normal text-th-fgd-4 text-xs">
+            <div className="text-xs font-normal text-th-fgd-4">
               {t(cat.desc)}
             </div>
           </button>
@@ -216,14 +216,14 @@ export const FavoriteMarketButton = ({ market }) => {
       className="default-transition text-th-primary hover:text-th-fgd-3"
       onClick={() => removeFromFavorites(market)}
     >
-      <FilledStarIcon className="h-5 w-5" />
+      <FilledStarIcon className="w-5 h-5" />
     </button>
   ) : (
     <button
       className="default-transition text-th-fgd-4 hover:text-th-primary"
       onClick={() => addToFavorites(market)}
     >
-      <StarIcon className="h-5 w-5" />
+      <StarIcon className="w-5 h-5" />
     </button>
   )
 }

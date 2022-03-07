@@ -40,7 +40,7 @@ const TopBar = () => {
     <>
       <nav className={`bg-th-bkg-2`}>
         <div className={`px-4 xl:px-6`}>
-          <div className={`flex justify-between h-14`}>
+          <div className={`flex justify-between h-[6.25rem]`}>
             <div className={`flex`}>
               <Link href={defaultMarket.path} shallow={true}>
                 <div
@@ -48,7 +48,7 @@ const TopBar = () => {
                 >
                   <img
                     className={`h-8 w-auto`}
-                    src="/assets/icons/logo.svg"
+                    src="/Lagrange-logo-light.png"
                     alt="next"
                   />
                 </div>
@@ -79,20 +79,20 @@ const TopBar = () => {
                       t('calculator'),
                       '/risk-calculator',
                       false,
-                      <CalculatorIcon className="h-4 w-4" key="calculator" />,
+                      <CalculatorIcon className="w-4 h-4" key="calculator" />,
                     ],
                     [
                       t('learn'),
                       'https://docs.mango.markets/',
                       true,
-                      <LightBulbIcon className="h-4 w-4" key="learn" />,
+                      <LightBulbIcon className="w-4 h-4" key="learn" />,
                     ],
                     [
                       'Mango v2',
                       'https://v2.mango.markets',
                       true,
                       <MangoIcon
-                        className="stroke-current h-4 w-4"
+                        className="w-4 h-4 stroke-current"
                         key="mango-v2"
                       />,
                     ],
@@ -101,7 +101,7 @@ const TopBar = () => {
                       'https://v1.mango.markets',
                       true,
                       <MangoIcon
-                        className="stroke-current h-4 w-4"
+                        className="w-4 h-4 stroke-current"
                         key="mango-v1"
                       />,
                     ],
@@ -124,10 +124,10 @@ const TopBar = () => {
                 wallet?.publicKey?.toBase58() ? (
                 <div className="pl-2">
                   <button
-                    className="border border-th-bkg-4 py-1 px-2 rounded text-xs focus:outline-none hover:border-th-fgd-4"
+                    className="px-2 py-1 text-xs border rounded border-th-bkg-4 focus:outline-none hover:border-th-fgd-4"
                     onClick={() => setShowAccountsModal(true)}
                   >
-                    <div className="font-normal text-th-primary text-xs">
+                    <div className="text-xs font-normal text-th-primary">
                       {t('account')}
                     </div>
                     {mangoAccount.name

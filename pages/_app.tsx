@@ -165,7 +165,7 @@ function App({ Component, pageProps }) {
           <FetchReferrer />
         </ErrorBoundary>
 
-        <ThemeProvider defaultTheme="light-theme">
+        <ThemeProvider defaultTheme="Light">
           <ViewportProvider>
             <div className="min-h-screen bg-th-bkg-1">
               <ErrorBoundary>

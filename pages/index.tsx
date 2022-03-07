@@ -58,7 +58,7 @@ const Index: NextPage = (props) => {
               <p className="mt-2">any broker or settlement periods.</p>
             </div>
             <div className="mt-8">
-              <Link href="/lite">
+              <Link href="/swap">
                 <a>
                   <button className="text-white rounded w-52 xl:w-52 md:w-52 sm:w-48 xs:w-36 h-14 bg-gradient-to-b from-lagrange-buttonpro-blue to-lagrange-buttonpro-purple">
                     <p className="text-4xl font-normal">

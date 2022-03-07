@@ -30,6 +30,10 @@ import {
   ReferrerIdRecord,
 } from '@blockworks-foundation/mango-client'
 
+import '../styles/walletbutton.css'
+import 'tailwindcss/tailwind.css'
+import '../styles/globals.css'
+
 const MangoStoreUpdater = () => {
   useHydrateStore()
   return null

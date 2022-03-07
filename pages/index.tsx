@@ -60,21 +60,16 @@ const Index: NextPage = (props) => {
             <div className="mt-8">
               <Link href="/swap">
                 <a>
-                  <button className="text-white rounded w-52 xl:w-52 md:w-52 sm:w-48 xs:w-36 h-14 bg-gradient-to-b from-lagrange-buttonpro-blue to-lagrange-buttonpro-purple">
-                    <p className="text-4xl font-normal">
-                      LITE
-                      <span className="text-[.72rem] w-5 font-normal">
-                        UNDER MAINTENANCE
-                      </span>
-                    </p>
+                  <button className="text-white rounded w-52 xl:w-52 md:w-52 sm:w-48 xs:w-36 h-14 bg-gradient-to-b from-light-theme-lagrangebuttonproblue to-light-theme-lagrangebuttonpropurple">
+                    <p className="text-4xl font-lagrange">LITE</p>
                   </button>
                 </a>
               </Link>
 
               <a>
-                <button className="w-48 ml-4 text-white border-2 rounded sm:w-40 xs:w-36 h-14 border-lagrange-buttonpro-blue">
+                <button className="w-48 ml-4 text-white border-2 rounded sm:w-40 xs:w-36 h-14 border-light-theme-lagrangebuttonproblue">
                   <p className="text-4xl font-normal">
-                    PRO <span className="text-xs font-display">SOON</span>
+                    PRO <span className="text-xs font-lagrange">SOON</span>
                   </p>{' '}
                 </button>
               </a>

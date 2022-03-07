@@ -123,9 +123,9 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Mango Markets</title>
+        <title>Lagrange</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:title" content="Mango Markets" />
+        <meta property="og:title" content="Lagrange" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="keywords"
@@ -167,13 +167,13 @@ function App({ Component, pageProps }) {
 
         <ThemeProvider defaultTheme="Dark">
           <ViewportProvider>
-            <div className="bg-th-bkg-1 min-h-screen">
+            <div className="min-h-screen bg-th-bkg-1">
               <ErrorBoundary>
                 <GlobalNotification />
                 <Component {...pageProps} />
               </ErrorBoundary>
             </div>
-            <div className="md:hidden fixed bottom-0 left-0 w-full z-20">
+            <div className="fixed bottom-0 left-0 z-20 w-full md:hidden">
               <ErrorBoundary>
                 <BottomBar />
               </ErrorBoundary>

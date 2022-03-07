@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import React, { useEffect, useState, useCallback, useRef } from 'react'
 import TopBar from '../components/TopBar'
 import Image from 'next/image'
@@ -20,7 +22,6 @@ import {
 } from '@solana/wallet-adapter-base'
 import {
   Keypair,
-  SystemProgram,
   Transaction,
   LAMPORTS_PER_SOL,
   clusterApiUrl,
@@ -29,48 +30,7 @@ import {
 } from '@solana/web3.js'
 import axios from 'axios'
 
-const currencies = [
-  {
-    fiatSymbol: 'USD',
-    cryptoSymbol: 'USDC',
-    image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png',
-  },
-  {
-    fiatSymbol: 'AUD',
-    cryptoSymbol: 'AUDT',
-    image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/8123.png',
-  },
-  {
-    fiatSymbol: 'EUR',
-    cryptoSymbol: 'EURS',
-    image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/2989.png',
-  },
-  {
-    fiatSymbol: 'CHF',
-    cryptoSymbol: 'XCHF',
-    image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/4075.png',
-  },
-  {
-    fiatSymbol: 'NZD',
-    cryptoSymbol: 'NZDs',
-    image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/5494.png',
-  },
-  {
-    fiatSymbol: 'JPY',
-    cryptoSymbol: 'JPYC',
-    image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/9045.png',
-  },
-  {
-    fiatSymbol: 'TRY',
-    cryptoSymbol: 'TRYB',
-    image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/5181.png',
-  },
-  {
-    fiatSymbol: 'BRL',
-    cryptoSymbol: 'BRZ',
-    image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/4139.png',
-  },
-]
+
 
 const Pools = (props) => {
   const [usd, setUsd] = useState()
@@ -112,9 +72,6 @@ const Pools = (props) => {
   const [mybalance, setMybalance] = useState(String)
 
   const { swappableOutputForSol } = props
-  // const { connection } = useConnection();
-  // const { wallet } = useWallet();
-  // const { publicKey } = useWallet();
 
   const wallet = useMangoStore(walletSelector)
   const connection = useMangoStore(connectionSelector)
@@ -123,7 +80,6 @@ const Pools = (props) => {
   console.log('connected')
   console.log(connected == true)
 
-  const _publicKey = wallet?.publicKey?.toBase58()
   const gelsolbalance = async () => {}
 
   useEffect(() => {
@@ -146,17 +102,7 @@ const Pools = (props) => {
     setBilirabalance$c(Number(bilirabalance * bilirabalance$).toFixed(2))
   }, [bilirabalance, bilirabalance$])
 
-  useEffect(() => {
-    setMytotalvalue(
-      Number(
-        usdcbalance$ +
-          ageurbalance$ +
-          brzbalance$ +
-          usdtbalance$ +
-          bilirabalance$
-      ).toFixed(2)
-    )
-  })
+  
 
   useEffect(() => {
     //-----------------usd-----------------//
@@ -285,7 +231,7 @@ const Pools = (props) => {
     const getUSDCBalance = async () => {
       const walletAddress = wallet?.publicKey
       console.log('publicKey')
-      console.log(wallet.publicKey)
+      console.log(wallet?.publicKey)
       const tokenMintAddress = 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'
       const response = await axios({
         url: `https://api.mainnet-beta.solana.com`,
@@ -593,7 +539,7 @@ const Pools = (props) => {
     }
 
     const walletBalance = await connection.getBalance(
-      wallet.publicKey,
+      wallet?.publicKey,
       'confirmed'
     )
 
@@ -620,12 +566,28 @@ const Pools = (props) => {
         <title>Lagrange.fi</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+    
+
+    {/*   <div
+        className={`${
+          isExpanded ? `-translate-x-full` : `translate-x-0`
+        } sidebar bg-white xs:bg-white text-gray-800 w-80 xs:w-80 space-y-6 px-6 py-4 z-50 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out shadow-xl`}
+      >
+        <SidebarLogo />
+
+        <SidebarNavigation />
+      </div> */}
       <div className="flex-1 text-xl font-bold bg-gradient-to-r from-lagrangelight to-lagrangedark">
         <TopBar />
         <div className="text-center ">
           {/*    <h1 className="text-2xl">Pools</h1> */}
           {/* <h2 className="text-xl">Pools are in test mode please do not deposit</h2> */}
           <div className="flex flex-wrap justify-between pl-12 p-9 overflow-hidden">
+            
+
+         
+
+            
           </div>
         </div>
 

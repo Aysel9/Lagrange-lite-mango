@@ -12,12 +12,6 @@ import { useTranslation } from 'next-i18next'
 import Settings from './Settings'
 import TradeNavMenu from './TradeNavMenu'
 
-const StyledNewLabel = ({ children, ...props }) => (
-  <div style={{ fontSize: '0.5rem', marginLeft: '1px' }} {...props}>
-    {children}
-  </div>
-)
-
 const TopBar = () => {
   const { t } = useTranslation('common')
   const mangoAccount = useMangoStore((s) => s.selectedMangoAccount.current)
@@ -57,16 +51,6 @@ const TopBar = () => {
                 <MenuItem href="/borrow">{t('borrow')}</MenuItem>
                 <MenuItem href="/swap">{t('swap')}</MenuItem>
                 <MenuItem href="/stats">{t('stats')}</MenuItem>
-                <div className="relative">
-                  <MenuItem href="/referral">
-                    {t('referrals')}
-                    <div className="absolute flex items-center justify-center h-4 px-1.5 bg-gradient-to-br from-red-500 to-yellow-500 rounded-full -right-3 -top-3">
-                      <StyledNewLabel className="text-white uppercase">
-                        new
-                      </StyledNewLabel>
-                    </div>
-                  </MenuItem>
-                </div>
               </div>
             </div>
             <div className="flex items-center">

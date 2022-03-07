@@ -20,8 +20,8 @@ const Index: NextPage = (props) => {
             <Image
               className="cursor-pointer"
               src={LagrangeMobileLogo}
-              width={202}
-              height={83}
+              width={256}
+              height={62}
               alt="Logo"
             />
           </div>

@@ -65,7 +65,7 @@ const Index: NextPage = (props) => {
               <Link href="/swap">
                 <a>
                   <button className="text-white rounded w-52 xl:w-52 md:w-52 sm:w-48 xs:w-36 h-14 bg-gradient-to-b from-light-theme-lagrangebuttonproblue to-light-theme-lagrangebuttonpropurple">
-                    <h4 className="font-semibold text-white text-[2.188rem]">
+                    <h4 className=" font-medium text-white text-[2.188rem]">
                       LITE
                     </h4>
                   </button>

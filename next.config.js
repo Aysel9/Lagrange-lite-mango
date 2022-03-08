@@ -1,13 +1,10 @@
-
 /** @type {import('next').NextConfig} */
 
 const { i18n } = require('./next-i18next.config')
 
-
-
 const moduleExports = {
   images: {
-    domains: ['s2.coinmarketcap.com','assets.coingecko.com'],
+    domains: ['s2.coinmarketcap.com', 'assets.coingecko.com'],
   },
   i18n,
   async redirects() {

@@ -51,7 +51,7 @@ const SwapMango: NextPage = (props) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className="flex-1 text-xl font-bold bg-gradient-to-r from-lagrangelight to-lagrangedark">
+      <div className="flex-1 text-xl font-bold bg-gradient-to-r from-light-theme-lagrangelight to-light-theme-lagrangedark">
         <TopBar />
         <div>
           <JupiterProvider

@@ -572,12 +572,12 @@ const Pools = (props) => {
 
         <SidebarNavigation />
       </div> */}
-      <div className="flex-1 text-xl font-bold bg-gradient-to-r from-lagrangelight to-lagrangedark">
+      <div className="flex-1 text-xl font-bold bg-gradient-to-r from-light-theme-lagrangelight to-light-theme-lagrangedark">
         <TopBar />
         <div className="text-center ">
           {/*    <h1 className="text-2xl">Pools</h1> */}
           {/* <h2 className="text-xl">Pools are in test mode please do not deposit</h2> */}
-          <div className="flex flex-wrap justify-between pl-12 p-9 overflow-hidden"></div>
+          <div className="flex flex-wrap justify-between pl-12 overflow-hidden p-9"></div>
         </div>
 
         <div>

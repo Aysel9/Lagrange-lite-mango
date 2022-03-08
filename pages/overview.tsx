@@ -25,9 +25,9 @@ const Overview: NextPage<Props> = (props) => {
         <title>Lagrange.fi</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="flex-1 text-xl font-bold bg-gradient-to-r from-lagrangelight to-lagrangedark">
+      <div className="flex-1 text-xl font-bold bg-gradient-to-r from-light-theme-lagrangelight to-light-theme-lagrangedark">
         <TopBar />
-        <div className=" pl-12 pt-9 pr-12 rounded ">
+        <div className="pl-12 pr-12 rounded  pt-9">
           <div className="">
             <div className="bg-white">
               <h1 className="ml-8 text-4xl font-normal ">Market Overview</h1>
@@ -106,34 +106,31 @@ const Overview: NextPage<Props> = (props) => {
                   </td>
 
                   <td className="border">
-                    <p className="text-center sm:text-xl xs:text-xs">
-                      1.11
-                    </p>
+                    <p className="text-center sm:text-xl xs:text-xs">1.11</p>
                   </td>
 
                   <td className="border">
-                    <p className="text-center sm:text-xl xs:text-xs">
-                     1.42
-                    </p>
+                    <p className="text-center sm:text-xl xs:text-xs">1.42</p>
                   </td>
                   <td className="border">
-                    <p className="text-center sm:text-xl xs:text-xs">
-                      2.18
-                    </p>
+                    <p className="text-center sm:text-xl xs:text-xs">2.18</p>
                   </td>
                 </tr>
 
                 <tr>
                   <td className="grid py-2 text-left border justify-items-center">
                     <div className="flex flex-wrap items-center self-center justify-center sm:text-2xl xs:text-xs">
-                      <Image src="https://assets.coingecko.com/coins/images/19479/small/agEUR.png?1635283566" alt="agEUR" width={32} height={32} />
+                      <Image
+                        src="https://assets.coingecko.com/coins/images/19479/small/agEUR.png?1635283566"
+                        alt="agEUR"
+                        width={32}
+                        height={32}
+                      />
                       <p className="px-2 py-2">agEUR</p>
                     </div>
                   </td>
                   <td className="border">
-                    <p className="text-center sm:text-xl xs:text-xs">
-                      2.56
-                    </p>
+                    <p className="text-center sm:text-xl xs:text-xs">2.56</p>
                   </td>
 
                   <td className="border">
@@ -141,68 +138,62 @@ const Overview: NextPage<Props> = (props) => {
                   </td>
 
                   <td className="border">
-                    <p className="text-center sm:text-xl xs:text-xs">
-                      0.58
-                    </p>
+                    <p className="text-center sm:text-xl xs:text-xs">0.58</p>
                   </td>
                   <td className="border">
-                    <p className="text-center sm:text-xl xs:text-xs">
-                     0.97
-                    </p>
+                    <p className="text-center sm:text-xl xs:text-xs">0.97</p>
                   </td>
                 </tr>
 
                 <tr>
                   <td className="grid py-2 text-left border justify-items-center">
                     <div className="flex flex-wrap items-center self-center justify-center sm:text-2xl xs:text-xs">
-                      <Image src="https://s2.coinmarketcap.com/static/img/coins/64x64/5181.png" alt="TRYB" width={32} height={32} />
+                      <Image
+                        src="https://s2.coinmarketcap.com/static/img/coins/64x64/5181.png"
+                        alt="TRYB"
+                        width={32}
+                        height={32}
+                      />
                       <p className="px-2 py-2">TRYB</p>
                     </div>
                   </td>
                   <td className="border">
-                    <p className="text-center sm:text-xl xs:text-xs">
-                      0.28
-                    </p>
+                    <p className="text-center sm:text-xl xs:text-xs">0.28</p>
                   </td>
 
                   <td className="border">
-                    <p className="text-center sm:text-xl xs:text-xs">
-                      2.52
-                    </p>
+                    <p className="text-center sm:text-xl xs:text-xs">2.52</p>
                   </td>
 
                   <td className="border">
                     <p className="text-center sm:text-xl xs:text-xs">-</p>
                   </td>
                   <td className="border">
-                    <p className="text-center sm:text-xl xs:text-xs">
-                      1.91
-                    </p>
+                    <p className="text-center sm:text-xl xs:text-xs">1.91</p>
                   </td>
                 </tr>
                 <tr>
                   <td className="grid py-2 text-left border justify-items-center">
                     <div className="flex flex-wrap items-center self-center justify-center sm:text-2xl xs:text-xs">
-                      <Image src="https://s2.coinmarketcap.com/static/img/coins/64x64/4139.png" alt="BRZ" width={32} height={32} />
+                      <Image
+                        src="https://s2.coinmarketcap.com/static/img/coins/64x64/4139.png"
+                        alt="BRZ"
+                        width={32}
+                        height={32}
+                      />
                       <p className="px-2 py-2">BRZ</p>
                     </div>
                   </td>
                   <td className="border">
-                    <p className="text-center sm:text-xl xs:text-xs">
-                      1.11
-                    </p>
+                    <p className="text-center sm:text-xl xs:text-xs">1.11</p>
                   </td>
 
                   <td className="border">
-                    <p className="text-center sm:text-xl xs:text-xs">
-                      2.56
-                    </p>
+                    <p className="text-center sm:text-xl xs:text-xs">2.56</p>
                   </td>
 
                   <td className="border">
-                    <p className="text-center sm:text-xl xs:text-xs">
-                      0.98
-                    </p>
+                    <p className="text-center sm:text-xl xs:text-xs">0.98</p>
                   </td>
                   <td className="border">
                     <p className="text-center sm:text-xl xs:text-xs">-</p>
@@ -217,4 +208,3 @@ const Overview: NextPage<Props> = (props) => {
   )
 }
 export default Overview
-

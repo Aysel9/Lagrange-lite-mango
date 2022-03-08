@@ -4,149 +4,135 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.topbar1{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px;
-	background: #fff;
+.topbar1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
 }
-.topbar2{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+.topbar2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.sidebarparentdiv{
-font-family: Roboto!important;
-font-size: clamp(18px, 1.73vw ,25px);
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: row;
-margin-left: 80px;
+.sidebarparentdiv {
+  font-family: Roboto !important;
+  font-size: clamp(18px, 1.73vw, 25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 80px;
 }
 
 .sidebarparentdiv a {
-	padding-right: clamp(10px,5.55vw,80px);
-	font-weight: 500;
-
-
+  padding-right: clamp(10px, 5.55vw, 80px);
+  font-weight: 500;
 }
 
 .sidebarparentdiv a:nth-child(2) {
-	width: clamp(auto,18.05vw ,260px);
-	white-space: nowrap;
-
+  width: clamp(auto, 18.05vw, 260px);
+  white-space: nowrap;
 }
 
 .sidebarparentdiv a:last-child {
-	padding-right: 10px;
+  padding-right: 10px;
 }
 
 .sidebarparentdiv a:hover {
-	color: #007D5E;
-	font-weight: 500;
-   text-decoration:underline;
-   text-underline-offset: 5px;
+  color: #007d5e;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
-
-.sidebardiv{
-border-radius: 10px;	
+.sidebardiv {
+  border-radius: 10px;
 }
 
-
-.connectwalletswap{
-border:1px solid #2EDAAF;
-border-radius: 62px;
-display: flex;
-align-items: center;
-justify-content: center;
-line-height: 0;
-text-align: center!important;
-font-family: Roboto!important;
-font-size: 23px!important;
-font-weight: 500!important;
+.connectwalletswap {
+  border: 1px solid #2edaaf;
+  border-radius: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  text-align: center !important;
+  font-family: Roboto !important;
+  font-size: 23px !important;
+  font-weight: 500 !important;
 }
 
-.connectwalletswap:hover{
-background: #2EDAAF;
+.connectwalletswap:hover {
+  background: #2edaaf;
 }
 
-
-#buttonconnect1{
-display: none;
+#buttonconnect1 {
+  display: none;
 }
 
-#connect-wallet-tip{
-border-radius: 62px;
-width:218px;
-text-align: center!important;
-font-family: Roboto!important;
-font-size: 23px!important;
-font-weight: 500!important;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 46px;
+#connect-wallet-tip {
+  border-radius: 62px;
+  width: 218px;
+  text-align: center !important;
+  font-family: Roboto !important;
+  font-size: 23px !important;
+  font-weight: 500 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
 }
 
-
-
-
-.JupiterForm1{
-margin-top: 35px;
-display: flex;
-align-items: flex-start;
-justify-content: center;
+.JupiterForm1 {
+  margin-top: 35px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 @media screen and (max-width: 868px) {
-  .JupiterForm2{
-flex-direction: column;
-}
+  .JupiterForm2 {
+    flex-direction: column;
+  }
 }
 
-.JupiterForm2{
-display: flex;
-align-items: flex-start;
-justify-content: center;
+.JupiterForm2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 @media screen and (max-width: 868px) {
-.chart1{
-margin-bottom:  20px;
+  .chart1 {
+    margin-bottom: 20px;
+  }
 }
-}
-
-
 
 @media screen and (max-width: 425px) {
-	.JupiterForm1{
-		margin-top: 35px;
-		display: flex;
-		align-items: flex-start;
-		justify-content: center;
-		}
+  .JupiterForm1 {
+    margin-top: 35px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 
-		.JupiterForm2{
-			display: flex;
-			align-items: flex-start;
-			justify-content: center;
-			}
-	}
-
-.chart1{
-margin-right: 35px;
-width: clamp(240px, 45.55vw, 656px)!important; 
-
+  .JupiterForm2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 
-.chart2{
-width: clamp(240px, 45.55vw, 656px)!important; 
+.chart1 {
+  margin-right: 35px;
+  width: clamp(240px, 45.55vw, 656px) !important;
+}
 
+.chart2 {
+  width: clamp(240px, 45.55vw, 656px) !important;
 }

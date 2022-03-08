@@ -30,8 +30,6 @@ import {
 } from '@solana/web3.js'
 import axios from 'axios'
 
-
-
 const Pools = (props) => {
   const [usd, setUsd] = useState()
   const [ageur, setAgeur] = useState()
@@ -101,8 +99,6 @@ const Pools = (props) => {
   useEffect(() => {
     setBilirabalance$c(Number(bilirabalance * bilirabalance$).toFixed(2))
   }, [bilirabalance, bilirabalance$])
-
-  
 
   useEffect(() => {
     //-----------------usd-----------------//
@@ -566,9 +562,8 @@ const Pools = (props) => {
         <title>Lagrange.fi</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-    
 
-    {/*   <div
+      {/*   <div
         className={`${
           isExpanded ? `-translate-x-full` : `translate-x-0`
         } sidebar bg-white xs:bg-white text-gray-800 w-80 xs:w-80 space-y-6 px-6 py-4 z-50 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out shadow-xl`}
@@ -582,13 +577,7 @@ const Pools = (props) => {
         <div className="text-center ">
           {/*    <h1 className="text-2xl">Pools</h1> */}
           {/* <h2 className="text-xl">Pools are in test mode please do not deposit</h2> */}
-          <div className="flex flex-wrap justify-between pl-12 p-9 overflow-hidden">
-            
-
-         
-
-            
-          </div>
+          <div className="flex flex-wrap justify-between pl-12 p-9 overflow-hidden"></div>
         </div>
 
         <div>

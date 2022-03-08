@@ -47,9 +47,9 @@ const TopBar = () => {
               <div
                 className={`hidden md:flex md:items-center md:space-x-2 lg:space-x-[5rem] md:ml-[3.125rem]`}
               >
-                <MenuItem href="/swap">{t('swap')}</MenuItem>
-                <MenuItem href="/overview">{t('overview')}</MenuItem>
-                <MenuItem href="/pools">{t('pools')}</MenuItem>
+                <MenuItem href="/swap">Swap</MenuItem>
+                <MenuItem href="/overview">Market Overview</MenuItem>
+                <MenuItem href="/pools">Pools</MenuItem>
               </div>
             </div>
             <div className="flex items-center">

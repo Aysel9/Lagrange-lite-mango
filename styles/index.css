@@ -77,7 +77,6 @@ h1 {
   @apply text-[2.688rem] font-lagrange;
 }
 
-
 h2 {
   @apply text-lg font-bold text-th-fgd-1;
 }

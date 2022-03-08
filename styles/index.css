@@ -86,7 +86,7 @@ h3 {
 }
 
 h4 {
-  @apply text-[1.875rem] font-lagrange;
+  @apply  font-lagrange;
 }
 
 p {

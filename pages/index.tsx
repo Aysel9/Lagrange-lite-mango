@@ -20,8 +20,8 @@ const Index: NextPage = (props) => {
             <Image
               className="cursor-pointer"
               src={LagrangeMobileLogo}
-              width={256}
-              height={62}
+              width={218}
+              height={52}
               alt="Logo"
             />
           </div>
@@ -33,14 +33,14 @@ const Index: NextPage = (props) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <p className="text-base font-normal font-display xs:text-sm sm:text-lg">
+                <p className="text-base font-normal text-white font-lagrange xs:text-sm sm:text-lg">
                   Demo Video
                 </p>
               </a>
             </p>
             <p className="mr-2 xxl:ml-9 xl:ml-9 lg:ml-9 mdl:ml-9 sm:ml-9 xs:ml-2 xs:mr-0">
               <a href="#" target="_blank" rel="noreferrer">
-                <p className="text-base font-normal font-display xs:text-sm sm:text-lg">
+                <p className="text-base font-normal text-white font-lagrange xs:text-sm sm:text-lg">
                   Pitchdeck
                 </p>
               </a>
@@ -50,14 +50,14 @@ const Index: NextPage = (props) => {
         <div className="flex items-center">
           <div className="h-full ml-12 mt-36 sm:mt-16 sm:ml-12 xs:ml-2">
             <div className=" leading-[3.5rem] xs:leading-[2.5rem] ">
-              <h1 className="font-normal text-white">
+              <h1 className="font-normal text-white text-[2.188rem]">
                 <span className="font-medium ">Lagrange </span>
                 offers a fully decentralized
               </h1>
-              <h1 className="mt-2 text-white">
+              <h1 className="mt-2 text-white text-[2.188rem]">
                 24/7 FX market that does not require
               </h1>
-              <h1 className="mt-2 text-white">
+              <h1 className="mt-2 text-white text-[2.188rem]">
                 any broker or settlement periods.
               </h1>
             </div>
@@ -65,15 +65,17 @@ const Index: NextPage = (props) => {
               <Link href="/swap">
                 <a>
                   <button className="text-white rounded w-52 xl:w-52 md:w-52 sm:w-48 xs:w-36 h-14 bg-gradient-to-b from-light-theme-lagrangebuttonproblue to-light-theme-lagrangebuttonpropurple">
-                    <h4 className="font-semibold text-white">LITE</h4>
+                    <h4 className="font-semibold text-white text-[2.188rem]">
+                      LITE
+                    </h4>
                   </button>
                 </a>
               </Link>
 
               <a>
-                <button className="w-48 ml-4 text-white border-2 rounded sm:w-40 xs:w-36 h-14 border-light-theme-lagrangebuttonproblue">
-                  <h3 className="text-4xl font-normal">
-                    Pro <span className="text-xs font-lagrange">SOON</span>
+                <button className="w-48 mt-1 ml-4 text-white border-2 rounded sm:w-40 xs:w-36 h-14 border-light-theme-lagrangebuttonproblue">
+                  <h3 className="font-normal text-[1.875rem]">
+                    Pro <span className="text-xs font-lagrange ">SOON</span>
                   </h3>{' '}
                 </button>
               </a>

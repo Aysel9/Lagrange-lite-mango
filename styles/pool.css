@@ -1,0 +1,227 @@
+
+/*   ---------  Pool 0 -------------------  */ 
+.pool0{
+	width: clamp(300px,79.79vw,1149px);
+	margin: auto;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	font-family: Roboto!important;
+	font-weight: 400;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.pool0 .title{
+	font-size: 35px;
+}
+
+.pool0 table{
+	margin-top: 0px;
+}
+
+.pool0 tr th{
+	text-align: center;
+	color: #000;
+	font-weight: 400;
+	padding:5px 0px;
+}
+
+.pool0 tr td{
+	text-align: center;
+	padding:  15px;
+	font-size: 22px;
+	font-weight: 500;
+	
+}
+
+.pool0 .loqoword{
+	display: flex;
+	align-items: center;
+}
+.pool0 .loqoword span{
+	margin-left: 10px;
+}
+
+.pool0 .td1{
+	display: flex;
+	align-items: center;
+}
+
+.pool0 .img2{
+	margin-left: -15px;
+	margin-right: 7px;
+}
+
+
+.pool0 tr td button{
+	font-weight: 500;
+	width: 226px;
+	background: #96ECD7;
+    height: 59px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+/*   ---------  Pool 1  -------------------  */ 
+.pool1{
+	width: clamp(300px,79.79vw,1149px);
+	margin: auto;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	font-family: Roboto!important;
+	font-weight: 400;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.pool1 .title{
+	font-size: 35px;
+}
+
+.pool1 table{
+	margin-top: 30px;
+}
+
+.pool1 tr th{
+	text-align: left;
+	color: #666666;
+	font-weight: 500;
+	padding: 10px 0px;
+}
+
+.pool1 tr{
+	border: 1px solid #D3D3D3;
+}
+
+.pool1 tr:first-child{
+	border: 0px solid #D3D3D3;
+}
+
+.pool1 tr td{
+	padding: 15px;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.pool1 .td1{
+	display: flex;
+	align-items: center;
+}
+
+.pool1 .img2{
+	margin-left: -15px;
+	margin-right: 7px;
+}
+
+
+.pool1 tr td button{
+	font-weight: 500;
+	width: 226px;
+	background: #96ECD7;
+    height: 59px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*  ------------   Pool 2  -------------------  */ 
+.pool2{
+	width: clamp(300px,89.44vw,1288px);
+	margin: auto;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	font-family: Roboto!important;
+	font-weight: 400;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-bottom: 190px;
+}
+
+.pool2 .title{
+	font-size: 35px;
+}
+.titlediv{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.titlediv button{
+	width: 190px;
+	height: 51px;
+	background: #96ECD7;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.pool2 table{
+	margin-top: 30px;
+}
+
+.pool2 tr th:first-child{
+	text-align: left;	
+}
+
+.pool2 tr th{
+	text-align: center;
+	color: #666666;
+	font-weight: 400;
+	padding: 15px 0px;
+	font-size: 20px;
+	
+}
+
+.pool2 tr{
+	border: 1px solid #D3D3D3;
+}
+
+.pool2 tr:first-child{
+	border: 0px solid #D3D3D3;
+}
+
+.pool2 tr td{
+	padding: 15px;
+	font-size: 22px;
+	font-weight: 500!important;
+	text-align: center;
+}
+
+.pool2 .td1{
+	display: flex;
+	align-items: center;
+}
+
+.pool2 .img2{
+	margin-left: -15px;
+	margin-right: 7px;
+}
+
+
+.pool2 tr td button{
+	font-weight: 500;
+	width: 182px;
+    height: 49px;
+    border: 1px solid #96ECD7;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

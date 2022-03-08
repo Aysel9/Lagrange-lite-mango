@@ -33,6 +33,7 @@ import {
 import '../styles/walletbutton.css'
 import 'tailwindcss/tailwind.css'
 import '../styles/globals.css'
+import '../styles/pool.css'
 
 const MangoStoreUpdater = () => {
   useHydrateStore()

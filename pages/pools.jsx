@@ -562,159 +562,148 @@ const Pools = (props) => {
         <title>Lagrange.fi</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-
-      {/*   <div
-        className={`${
-          isExpanded ? `-translate-x-full` : `translate-x-0`
-        } sidebar bg-white xs:bg-white text-gray-800 w-80 xs:w-80 space-y-6 px-6 py-4 z-50 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out shadow-xl`}
-      >
-        <SidebarLogo />
-
-        <SidebarNavigation />
-      </div> */}
       <div className="flex-1 text-xl font-bold bg-gradient-to-r from-light-theme-lagrangelight to-light-theme-lagrangedark">
         <TopBar />
-        <div className="text-center ">
-          {/*    <h1 className="text-2xl">Pools</h1> */}
-          {/* <h2 className="text-xl">Pools are in test mode please do not deposit</h2> */}
-          <div className="flex flex-wrap justify-between pl-12 overflow-hidden p-9"></div>
-        </div>
+     
 
-        <div>
-          <div>
-            <div className="flex justify-center px-2">
-              <div className="w-full p-5 my-1 overflow-hidden bg-white border rounded shadow-lg mx-28">
-                <div className="text-4xl font-normal"> Account Balance</div>
-                <table className="w-full text-lg table-auto">
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th>Price</th>
-                      <th>Balances</th>
-                      <th>Value</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div className="flex flex-wrap items-center self-center justify-start sm:text-2xl xs:text-xs">
-                          <Image
-                            src={USDC}
-                            alt="USDC"
-                            width={32}
-                            height={32}
-                            layout="fixed"
-                          />
-                          <p className="px-2 py-2">USDC</p>
-                        </div>
-                      </td>
-                      <td className="text-center">$ {usdcbalance$}</td>
-                      <td className="text-center">
-                        {usdbalance == undefined ? 0 : usdbalance}
-                      </td>
-                      <td className="text-center">
-                        $ {isNaN(usdcbalance$c) ? 0.0 : usdcbalance$c}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div className="flex flex-wrap items-center self-center justify-start sm:text-2xl xs:text-xs">
-                          <Image
-                            src={EURS}
-                            alt="agEUR"
-                            width={32}
-                            height={32}
-                            layout="fixed"
-                          />
-                          <p className="px-2 py-2">agEUR</p>
-                        </div>
-                      </td>
-                      <td className="text-center">$ {ageurbalance$}</td>
-                      <td className="text-center">
-                        {ageurbalance == undefined ? 0 : ageurbalance}
-                      </td>
-                      <td className="text-center">
-                        $ {isNaN(ageurbalance$c) ? 0.0 : ageurbalance$c}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div className="flex flex-wrap items-center self-center justify-start sm:text-2xl xs:text-xs">
-                          <Image
-                            src={USDT}
-                            alt="USDT"
-                            width={32}
-                            height={32}
-                            layout="fixed"
-                          />
-                          <p className="px-2 py-2">USDT</p>
-                        </div>
-                      </td>
-                      <td className="text-center">$ {usdcbalance$}</td>
-                      <td className="text-center">
-                        {usdtbalance == undefined ? 0 : usdtbalance}
-                      </td>
-                      <td className="text-center">
-                        $ {isNaN(usdtbalance$c) ? 0.0 : usdtbalance$c}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div className="flex flex-wrap items-center self-center justify-start sm:text-2xl xs:text-xs">
-                          <Image
-                            src={TRYB}
-                            alt="TRYB"
-                            width={32}
-                            height={32}
-                            layout="fixed"
-                          />
-                          <p className="px-2 py-2">TRYB</p>
-                        </div>
-                      </td>
-                      <td className="text-center">$ {bilirabalance$}</td>
-                      <td className="text-center">
-                        {bilirabalance == undefined ? 0 : bilirabalance}
-                      </td>
-                      <td className="text-center">
-                        $ {isNaN(bilirabalance$c) ? 0.0 : bilirabalance$c}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div className="flex flex-wrap items-center self-center justify-start sm:text-2xl xs:text-xs">
-                          <Image
-                            src={BRZ}
-                            alt="BRZ"
-                            width={32}
-                            height={32}
-                            layout="fixed"
-                          />
-                          <p className="px-2 py-2">BRZ</p>
-                        </div>
-                      </td>
-                      <td className="text-center">$ {brzbalance$}</td>
-                      <td className="text-center">
-                        {brzbalance == undefined ? 0 : brzbalance}
-                      </td>
-                      <td className="text-center">
-                        $ {isNaN(brzbalance$c) ? 0.0 : brzbalance$c}
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
+   
+<div className="pool0">
+        
+<span className="title">Account Balances</span>
+ 
+ <table>
+  <tr>
+    <th></th>
+    <th>Price</th>
+    <th>Balances</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+   <td >
+   <div className="loqoword"><Image src={USDC}  alt="USDC" width={35} height={35} layout="fixed" /> <span>USDC</span> </div>
+   </td>
+    <td>${usdcbalance$}</td>
+    <td>{usdbalance == undefined ? 0 : usdbalance}</td>
+    <td>${isNaN(usdcbalance$c) ? 0.0 : usdcbalance$c}</td>
+  </tr>
+   <tr>
+   <td >
+   <div className="loqoword"><Image src={USDT}  alt="USDC" width={35} height={35} layout="fixed" />  <span> USDT  </span></div>
+   </td>
+    <td>${usdtbalance$}</td>
+    <td>{usdtbalance == undefined ? 0 : usdtbalance}</td>
+    <td>${isNaN(usdtbalance$c) ? 0.0 : usdtbalance$c}</td>
+  </tr>
+   <tr>
+   <td >
+   <div className="loqoword"><Image src={EURS}  alt="USDC" width={35} height={35} layout="fixed" />  <span>agEUR </span></div>
+   </td>
+    <td>${ageurbalance$}</td>
+    <td>{ageurbalance == undefined ? 0 : ageurbalance}</td>
+    <td>${isNaN(ageurbalance$c) ? 0.0 : ageurbalance$c}</td>
+  </tr>
+   <tr>
+   <td >
+   <div className="loqoword"><Image src={TRYB}  alt="USDC" width={35} height={35} layout="fixed" />  <span>TRYB </span> </div>
+   </td>
+    <td>${bilirabalance$}</td>
+    <td>{bilirabalance == undefined ? 0 : bilirabalance}</td>
+    <td>${isNaN(bilirabalance$c) ? 0.0 : bilirabalance$c}</td>
+  </tr>
+   <tr>
+   <td >
+   <div className="loqoword"><Image src={BRZ}  alt="USDC" width={35} height={35} layout="fixed" />  <span>BRZ </span> </div>
+   </td>
+    <td>${brzbalance$}</td>
+    <td>{brzbalance == undefined ? 0 : brzbalance}</td>
+    <td>${isNaN(brzbalance$c) ? 0.0 : brzbalance$c}</td>
+  </tr>
+  
+</table>
+ 
 
-        <div className="flex justify-center p-2">
-          {/* <div className="w-11/12 px-2 py-2 my-1 overflow-hidden bg-white border rounded shadow-lg border-lagrangegraybackground">
-            <div className="text-xl font-normal"> Pools</div>
-            <div className="text-lg font-normal">
-              Pools are in testing. Please do not deposit
-            </div>
-          </div> */}
-        </div>
+ </div>
+
+
+
+      
+
+<div className="pool1">
+        
+<span className="title">Pools</span>
+ 
+ <table>
+  <tr>
+    <th>Asset</th>
+    <th>Rewards APR</th>
+    <th>Total Pool Value</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td className="td1">
+   <div><Image src={BRZ}  alt="USDC" width={46} height={46} layout="fixed" /></div>
+   <div className="img2"><Image src={USDC}  alt="USDC" width={46} height={46} layout="fixed" /></div>
+    WBRZ/USDL
+    </td>
+    <td>--%</td>
+    <td>$129.652.00</td>
+    <td><button>Add Liquidity </button></td>
+  </tr>
+  <tr>
+    <td className="td1">
+    <div><Image  src={TRYB}  alt="USDC" width={46} height={46} layout="fixed" /></div>
+    <div className="img2"><Image  src={USDC}  alt="USDC" width={46} height={46} layout="fixed" /></div>
+    WBRZ/USDL
+    </td>
+    <td>--%</td>
+    <td>$129.652.00</td>
+    <td><button>Add Liquidity </button></td>
+  </tr>
+</table>
+ 
+
+ </div>
+
+
+
+ <div className="pool2">
+ 
+<div className="titlediv">        
+<span className="title">Your Liquidity</span>
+<button>Claim Rewards</button>
+</div>
+ 
+ <table>
+  <tr>
+    <th>Pool</th>
+    <th>Portion Amount</th>
+    <th>Portion Value </th>
+    <th>Unclaimed Rewards</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td className="td1">
+   <div><Image src={BRZ}  alt="USDC" width={39} height={39} layout="fixed" /></div>
+   <div className="img2"><Image src={USDC}  alt="USDC" width={39} height={39} layout="fixed" /></div>
+    WBRZ/USDL
+    </td>
+    <td>0.0868</td>
+    <td>8.1315 USD</td>
+      <td className="td1">
+   <div><Image src={BRZ}  alt="USDC" width={39} height={39} layout="fixed" /></div>
+   <div className="img2"><Image src={USDC}  alt="USDC" width={39} height={39} layout="fixed" /></div>
+    0.121 USD
+    </td>
+    <td><button>Remove</button></td>
+  </tr>
+
+</table>
+ 
+
+ </div>
+      
+
+
       </div>
     </div>
   )

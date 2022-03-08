@@ -18,8 +18,8 @@ const ButtonGroup: FunctionComponent<ButtonGroupProps> = ({
   names,
 }) => {
   return (
-    <div className="bg-th-bkg-3 rounded-md">
-      <div className="flex relative">
+    <div className="rounded-md bg-th-bkg-3">
+      <div className="relative flex">
         {activeValue && values.includes(activeValue) ? (
           <div
             className={`absolute bg-th-bkg-4 default-transition h-full left-0 top-0 rounded-md transform`}

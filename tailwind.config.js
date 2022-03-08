@@ -19,6 +19,7 @@ module.exports = {
       },
       colors: {
         'light-theme': {
+          lagrangenavcolor: '#007D5E',
           lagrangewalletcolor: '#242424',
           lagrangelight: '#29E1AA26',
           lagrangedark: '#1A8BFD26',

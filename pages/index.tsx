@@ -49,28 +49,32 @@ const Index: NextPage = (props) => {
         </div>
         <div className="flex items-center">
           <div className="h-full ml-12 mt-36 sm:mt-16 sm:ml-12 xs:ml-2">
-            <div className=" leading-[3.5rem] xs:leading-[2.5rem] font-normal text-white  xxl:text-lagrange xl:text-lagrange lg:text-lagrange md:text-lagrange sm:text-lagrangesmallscreen xs:text-xl ">
-              <p className="font-normal">
-                <span className="font-lagrange">Lagrange </span>
+            <div className=" leading-[3.5rem] xs:leading-[2.5rem] ">
+              <h1 className="font-normal text-white">
+                <span className="font-medium ">Lagrange </span>
                 offers a fully decentralized
-              </p>
-              <p className="mt-2">24/7 FX market that does not require</p>
-              <p className="mt-2">any broker or settlement periods.</p>
+              </h1>
+              <h1 className="mt-2 text-white">
+                24/7 FX market that does not require
+              </h1>
+              <h1 className="mt-2 text-white">
+                any broker or settlement periods.
+              </h1>
             </div>
             <div className="mt-8">
               <Link href="/swap">
                 <a>
                   <button className="text-white rounded w-52 xl:w-52 md:w-52 sm:w-48 xs:w-36 h-14 bg-gradient-to-b from-light-theme-lagrangebuttonproblue to-light-theme-lagrangebuttonpropurple">
-                    <p className="text-4xl font-lagrange">LITE</p>
+                    <h4 className="font-semibold text-white">LITE</h4>
                   </button>
                 </a>
               </Link>
 
               <a>
                 <button className="w-48 ml-4 text-white border-2 rounded sm:w-40 xs:w-36 h-14 border-light-theme-lagrangebuttonproblue">
-                  <p className="text-4xl font-normal">
-                    PRO <span className="text-xs font-lagrange">SOON</span>
-                  </p>{' '}
+                  <h3 className="text-4xl font-normal">
+                    Pro <span className="text-xs font-lagrange">SOON</span>
+                  </h3>{' '}
                 </button>
               </a>
             </div>

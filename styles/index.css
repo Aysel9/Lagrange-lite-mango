@@ -70,27 +70,28 @@
 /* Base */
 
 body {
-  @apply text-sm font-body tracking-wider;
+  @apply text-sm tracking-wider font-body;
 }
 
 h1 {
-  @apply font-bold text-th-fgd-1 text-2xl;
+  @apply text-[2.688rem] font-lagrange;
 }
 
+
 h2 {
-  @apply font-bold text-th-fgd-1 text-lg;
+  @apply text-lg font-bold text-th-fgd-1;
 }
 
 h3 {
-  @apply font-bold text-th-fgd-1 text-base;
+  @apply text-[2.188rem] font-lagrange;
 }
 
 h4 {
-  @apply font-bold text-th-fgd-3 text-sm;
+  @apply text-[1.875rem] font-lagrange;
 }
 
 p {
-  @apply text-sm text-th-fgd-3 mb-2;
+  @apply mb-2 text-sm text-th-fgd-3;
 }
 
 a {
@@ -107,7 +108,7 @@ tbody {
 
 button {
   transition: all 0.3s ease;
-  @apply rounded-md tracking-wider;
+  @apply tracking-wider rounded-md;
 }
 
 button.transition-none {
@@ -280,7 +281,7 @@ body::-webkit-scrollbar-corner {
 
   .responsiveTable td .tdBefore {
     /* Now like a table header */
-    @apply text-th-fgd-3 font-normal;
+    @apply font-normal text-th-fgd-3;
     position: absolute;
     display: block;
 
@@ -435,11 +436,11 @@ body::-webkit-scrollbar-corner {
 }
 
 .introjs-tooltipbuttons {
-  @apply border-th-bkg-4 font-bold rounded-b-md focus:outline-none;
+  @apply font-bold border-th-bkg-4 rounded-b-md focus:outline-none;
 }
 
 .introjs-nextbutton {
-  @apply bg-th-bkg-4 border-th-bkg-4 flex h-4 items-center opacity-60 pointer-events-none rounded-full text-sm text-th-fgd-1;
+  @apply flex items-center h-4 text-sm rounded-full pointer-events-none bg-th-bkg-4 border-th-bkg-4 opacity-60 text-th-fgd-1;
   text-shadow: none;
 }
 
@@ -452,7 +453,7 @@ body::-webkit-scrollbar-corner {
 }
 
 .introjs-button:focus {
-  @apply bg-th-bkg-4 border-th-bkg-4 shadow-none text-th-fgd-1;
+  @apply shadow-none bg-th-bkg-4 border-th-bkg-4 text-th-fgd-1;
 }
 
 .introjs-hidden {
@@ -464,11 +465,11 @@ body::-webkit-scrollbar-corner {
 }
 
 .intro-tooltip h4 {
-  @apply font-body font-bold mb-2 text-lg;
+  @apply mb-2 text-lg font-bold font-body;
 }
 
 .intro-tooltip p {
-  @apply font-body mb-1 text-sm text-th-fgd-3;
+  @apply mb-1 text-sm font-body text-th-fgd-3;
 }
 
 .introjs-bullets ul li a {

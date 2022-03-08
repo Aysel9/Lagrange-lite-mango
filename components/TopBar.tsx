@@ -20,6 +20,7 @@ const TopBar = () => {
     DEFAULT_MARKET_KEY,
     initialMarket
   )
+  console.log(t('pools'))
 
   const handleCloseAccounts = useCallback(() => {
     setShowAccountsModal(false)
@@ -44,7 +45,7 @@ const TopBar = () => {
                 </div>
               </Link>
               <div
-                className={`hidden md:flex md:items-center md:space-x-2 lg:space-x-3 md:ml-4`}
+                className={`hidden md:flex md:items-center md:space-x-2 lg:space-x-[5rem] md:ml-[3.125rem]`}
               >
                 <MenuItem href="/swap">{t('swap')}</MenuItem>
                 <MenuItem href="/overview">{t('overview')}</MenuItem>

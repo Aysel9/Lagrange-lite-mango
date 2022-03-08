@@ -10,7 +10,6 @@ import AccountsModal from './AccountsModal'
 import { DEFAULT_MARKET_KEY, initialMarket } from './SettingsModal'
 import { useTranslation } from 'next-i18next'
 import Settings from './Settings'
-import TradeNavMenu from './TradeNavMenu'
 
 const TopBar = () => {
   const { t } = useTranslation('common')
@@ -37,20 +36,19 @@ const TopBar = () => {
                   className={`cursor-pointer flex-shrink-0 flex items-center`}
                 >
                   <img
-                    className={`h-8 w-auto`}
-                    src="/Lagrange-logo-light.png"
+                    src="/Lagrange-logo-dark.png"
                     alt="next"
+                    width={250}
+                    height={61}
                   />
                 </div>
               </Link>
               <div
                 className={`hidden md:flex md:items-center md:space-x-2 lg:space-x-3 md:ml-4`}
               >
-                <TradeNavMenu />
-                <MenuItem href="/account">{t('account')}</MenuItem>
-                <MenuItem href="/borrow">{t('borrow')}</MenuItem>
                 <MenuItem href="/swap">{t('swap')}</MenuItem>
-                <MenuItem href="/stats">{t('stats')}</MenuItem>
+                <MenuItem href="/overview">{t('overview')}</MenuItem>
+                <MenuItem href="/pools">{t('pools')}</MenuItem>
               </div>
             </div>
             <div className="flex items-center">
